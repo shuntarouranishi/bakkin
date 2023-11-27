@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Timer App</title>
+    <title>English Quiz</title>
   </head>
   <body>
+    <div id="quiz">
+      <p id="question">りんごは英語で何？</p>
+      <select id="answer">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+      </select>
+      <button onclick="submitAnswer()">Submit</button>
+    </div>
+
     <div id="timer">10</div>
+
+    <div id="result"></div>
     <div id="paymentLink" style="display: none">
-      <a href="https://qr.paypay.ne.jp/p2p01_SUGkHGKNIpykY7ao" target="_blank"
+      <a href="https://qr.paypay.ne.jp/p2p01_ACryDG4DtuDCmGjw" target="_blank"
         >Pay using PayPay</a
       >
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
